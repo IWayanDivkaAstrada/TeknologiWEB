@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deret Fibonacci & Menghitung Volume</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Fibonacci dan Volume</h1>
+        <h3>Nama: I Wayan Putra Divka Astrada</h3>
+        <h3>NIM: 2215101031</h3>
+        <h3>Kelas: A</h3>
+    </div>
+    <div class="deret">
+        <h2>Deret Fibonacci</h2>
+        <div class="fibonacci">
+            <p>Masukkan jumlah bilangan dalam deret Fibonacci:</p>
+            <input type="number" class="fibonacciInput">
+            <button onclick="calculateFibonacci()">Hitung</button>
+            <p class="result">Hasil:</p>
+        </div>
+    </div>
+    <div class="volume">
+        <h2>Menghitung Volume Ruang</h2>
+        <div class="calculator">
+            <p>Pilih bentuk:</p>
+            <select class="shape">
+                <option>  </option>
+                <option value="kubus">Kubus</option>
+                <option value="tabung">Tabung</option>
+                <option value="bola">Bola</option>
+            </select>
+            <div class="kubus form" style="display: none;">
+                <p>Masukkan panjang sisi kubus:</p>
+                <input type="number" class="kubusInput">
+                <button onclick="calculateVolume('kubus')">Hitung</button>
+                <p class="result">Volume Kubus:</p>
+            </div>
+            <div class="tabung form" style="display: none;">
+                <p>Masukkan jari-jari tabung:</p>
+                <input type="number" class="tabungRadius">
+                <p>Masukkan tinggi tabung:</p>
+                <input type="number" class="tabungHeight">
+                <button onclick="calculateVolume('tabung')">Hitung</button>
+                <p class="result">Volume Tabung:</p>
+            </div>
+            <div class="bola form" style="display: none;">
+                <p>Masukkan jari-jari bola:</p>
+                <input type="number" class="bolaRadius">
+                <button onclick="calculateVolume('bola')">Hitung</button>
+                <p class="result">Volume Bola:</p>
+            </div>
+        </div>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
